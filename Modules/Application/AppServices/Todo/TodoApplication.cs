@@ -6,7 +6,7 @@ using Domain.Interfaces.Services;
 using Infra.CrossCutting.Notification.Interfaces;
 using Infra.CrossCutting.UoW.Models;
 
-namespace Application.UseCases.Todo
+namespace Application.AppServices.Todo
 {
     public class TodoApplication : BaseValidationService, ITodoApplication
     {
@@ -31,7 +31,8 @@ namespace Application.UseCases.Todo
         public async Task<IEnumerable<TodoViewModel>> GetAllAsync()
         {
             var result = await _todoDomainService.SelectFilterAsync(x => x.Id != null);
-            return _mapper.Map<IEnumerable<TodoViewModel>>(result.OrderByDescending(x => x.CreatedAt));
+            var orderResult = result.OrderByDescending(x => x.CreatedAt);
+            return _mapper.Map<IEnumerable<TodoViewModel>>(orderResult);
         }
 
         public async Task<TodoViewModel> GetAsync(Guid id)

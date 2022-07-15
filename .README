@@ -1,0 +1,19 @@
+#Run Project Todo.Challenge
+
+## 1. Configure DataBase
+
+In root directory run the command:
+```
+docker-compose up -d
+```
+
+## 2. Run Scripts to Create DataBase and Tables
+
+```
+/Modules/Infra/Infra.Data.Migrations/Scripts/Sql/20220715_11_00_01_create_database.sql
+/Modules/Infra/Infra.Data.Migrations/Scripts/Sql/20220715_11_00_02_create_table_todo_s.sql
+```
+
+## 3. Run Project
+
+

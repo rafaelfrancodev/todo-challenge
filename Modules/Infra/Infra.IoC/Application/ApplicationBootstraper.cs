@@ -1,4 +1,4 @@
-﻿using Application.UseCases.Todo;
+﻿using Application.AppServices.Todo;
 using Infra.CrossCutting.Notification.Implements;
 using Infra.CrossCutting.Notification.Interfaces;
 using Microsoft.Extensions.Configuration;

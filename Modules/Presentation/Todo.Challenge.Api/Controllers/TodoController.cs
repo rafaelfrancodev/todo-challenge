@@ -1,6 +1,6 @@
-﻿using Application.AppServices.Todo.Inputs;
+﻿using Application.AppServices.Todo;
+using Application.AppServices.Todo.Inputs;
 using Application.AppServices.Todo.ViewModel;
-using Application.UseCases.Todo;
 using Infra.CrossCutting.Controllers;
 using Infra.CrossCutting.Notification.Model;
 using MediatR;

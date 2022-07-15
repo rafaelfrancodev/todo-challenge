@@ -1,7 +1,7 @@
 ﻿using Application.AppServices.Todo.Inputs;
 using Application.AppServices.Todo.ViewModel;
 
-namespace Application.UseCases.Todo
+namespace Application.AppServices.Todo
 {
     public interface ITodoApplication
     {
