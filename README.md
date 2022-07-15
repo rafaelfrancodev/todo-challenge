@@ -30,15 +30,22 @@ Change connection in = appsettings.Test.json
 #Anotações
 
 Eu utilizei uma POC que eu já desenvolvi algum tempo atrás para facilitar a implementação.
+
 Optei por utilizar o DDD, tendo minha entidades e regras de negócio do meu domínio.
-Dentro da Application realizo validações de aplicação como parametros de entrada... E também mapeamentos entre entidades.
+
+Dentro da Application realizo validações de aplicação como parametros de entrada e também mapeamentos entre entidades.
+
 Dentro da Infra.Data está os meus mapeamentos de banco, repositório e configuração com o Entity
 Infra.CrossCutting existem algumas funcionalidades compartilhada entre toda a aplicação, como generic repository, controle de notificações usando o media TR...
+
 Infra.IoC está com todas as injeções de depêndencias.
+
 E a API está no projeto Todo.Challenge.Api com o Swagger.
 
 Adicionei dois projetos também para testes.
+
 UnitTest - Testes unitários
+
 IntegratedTest = Testes integrados batendo direto nos end-point da aplicação.
 
 
