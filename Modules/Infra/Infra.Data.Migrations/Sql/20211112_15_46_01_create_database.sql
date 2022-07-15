@@ -1,0 +1,2 @@
+﻿CREATE DATABASE SoftoPocNet6;
+CREATE SCHEMA auth;
